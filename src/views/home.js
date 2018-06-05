@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Field, reduxForm, getFormValues } from 'redux-form';
+import { Field, reduxForm } from 'redux-form';
 import { Toggle } from '../components';
 import settings from '../constants/settings';
 

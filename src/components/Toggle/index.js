@@ -27,7 +27,7 @@ const Slider = styled.span`
 	transition-property: color;
 	transition: .4s;
 	border-radius: 2.125rem;
-	border: 0.5px solid ${({ theme, checked }) => checked ? 'transparent' : theme.colors.grey2};
+	border: 1px solid ${({ theme, checked }) => checked ? 'transparent' : theme.colors.grey2};
 
 	&:before {
 		position: absolute;
