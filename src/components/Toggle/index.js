@@ -8,6 +8,10 @@ const Container = styled.label`
 	display: inline-block;
 	width: 2.3rem;
 	height: 1.5rem;
+
+	input {
+		visibility: hidden;
+	}
 `;
 
 const Slider = styled.span`
