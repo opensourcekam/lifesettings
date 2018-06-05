@@ -32,7 +32,11 @@ const Credit = styled.div`
   p {
     font-size: 0.8rem
     margin: 0;
+    a {
+      color: ${({ theme }) => theme.colors.grey3};
+    }
   }
+
 `;
 
 const Home = () => (
@@ -50,8 +54,8 @@ const Home = () => (
       ))}
     </Form>
     <Credit>
-      <p>Art by Robert Gallardo - @robertgallardo</p>
-      <p>Code by Kam - @kam.ofthefuture</p>
+      <p>Art by Robert Gallardo - <a href="//instagram.com/robertgallardo">@RobertGallardo</a></p>
+      <p>Code by Kam - <a href="//instagram.com/kam.ofthefuture">@Kam.ofTheFuture</a></p>
     </Credit>
   </Container>
 )
