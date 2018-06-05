@@ -5,7 +5,7 @@ import { Toggle } from '../components';
 import settings from '../constants/settings';
 
 const Container = styled.div`
-  height: 100vh;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
