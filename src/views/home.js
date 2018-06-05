@@ -51,7 +51,7 @@ const Home = () => (
     </Form>
     <Credit>
       <p>Designed by Robert Gallardo - @robertgallardo</p>
-      <p>Coded by Kameron Robinson - @kam.ofthefuture</p>
+      <p>Code by Kam - @kam.ofthefuture</p>
     </Credit>
   </Container>
 )
