@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Field, reduxForm } from 'redux-form';
 import { Toggle } from '../components';
 import settings from '../constants/settings';
-import {createEventHandlerWithConfig} from 'recompose'
 
 const Container = styled.div`
   margin-top: 4rem;
@@ -22,7 +21,7 @@ const SettingWrapper = styled.div`
   justify-content: space-between;
   margin-bottom: 13px;
   span {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 `;
 
@@ -38,7 +37,6 @@ const Credit = styled.div`
       color: ${({ theme }) => theme.colors.grey3};
     }
   }
-
 `;
 
 const Home = () => (
