@@ -14,14 +14,16 @@ const Container = styled.div`
 `;
 
 const Form = styled.form`
-  min-width: 200px;
-  max-width: 400px;
+  min-width: 300px;
 `;
 
 const SettingWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 13px;
+  span {
+    font-size: 1.5rem;
+  }
 `;
 
 const Credit = styled.div`
@@ -43,7 +45,7 @@ const Home = () => (
   <Container>
     <Form>
       {settings.map((s, i) => (
-        <SettingWrapper key>
+        <SettingWrapper key={s.title}>
           <span>{s.title}</span>
           <Field
             component={Toggle}

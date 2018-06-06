@@ -6,8 +6,9 @@ import styled from 'styled-components';
 const Container = styled.label`
 	position: relative;
 	display: inline-block;
-	width: 2.3rem;
+	width: 2.6rem;
 	height: 1.5rem;
+	padding: 0.3rem;
 
 	input {
 		visibility: hidden;
@@ -38,7 +39,8 @@ const Slider = styled.span`
 		content: "";
 		height: 1.25rem;
 		width: 1.25rem;
-		left: ${({ checked }) => (checked ? '14.5px' : '1px')};
+		padding: 0.3rem;
+		left: ${({ checked }) => (checked ? '17.5px' : '1px')};
 		bottom: 1px;
 		background-color: ${({ theme }) => theme.colors.white};
 		transition-property: color;
