@@ -9,7 +9,7 @@ import Home from './views/home';
 import { initStore } from './store/index'
 
 const store = initStore();
-
+//test
 class App extends Component {
   render() {
     return (
