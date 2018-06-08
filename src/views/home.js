@@ -1,8 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 import { Field, reduxForm } from 'redux-form';
+
 import { Toggle } from '../components';
-import settings from '../constants/settings';
+import defaultSettings from '../constants/settings';
+const settings = defaultSettings;
+
+const Button = styled.button`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: ${({ theme }) => theme.colors.grey3};
+`;
 
 const Container = styled.div`
   margin-top: 4rem;
@@ -28,7 +38,6 @@ const SettingWrapper = styled.div`
 const Credit = styled.div`
   position: absolute;
   bottom: 1rem;
-  left: 1rem;
   color: ${({ theme }) => theme.colors.grey4};
   p {
     font-size: 0.8rem
@@ -39,9 +48,22 @@ const Credit = styled.div`
   }
 `;
 
-const Home = () => (
+function saveSettings(form) {
+  console.log('hey')
+  console.log(form);
+}
+
+const Home = ({ submit, ...props }) => (
   <Container>
-    <Form>
+    <Form
+      handleSubmit={saveSettings}
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}>
+      <Button type="submit">
+        sub
+      </Button>
+      <Link to="/stats">stats</Link>
       {settings.map((s, i) => (
         <SettingWrapper key={s.title}>
           <span>{s.title}</span>

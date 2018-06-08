@@ -6,15 +6,15 @@ export default [
     title: 'Emotion'
   },
   {
-    title: 'Patience',
-    checked: true
+    title: 'Patience'
   },
   {
-    title: 'Creativity',
-    checked: true
+    title: 'Creativity'
   },
   {
-    title: 'Focus',
-    checked: true
-  }
+    title: 'Focus'
+  },
+  // {
+  //   title: 'Ethics'
+  // }
 ];
